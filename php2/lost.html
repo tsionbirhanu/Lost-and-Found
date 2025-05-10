@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost Items | Lost and Found</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.php"><img src="images/logo.png" alt="Lost and Found Logo"></a>
+            </div>
+            <div class="nav-links">
+                <a href="index.php">HOME</a>
+                <a href="lost.php" class="active">LOST</a>
+                <a href="found.php">FOUND</a>
+                <a href="about.php">ABOUT US</a>
+                <div class="separator">|</div>
+                <a href="profile.php" class="user-icon"><i class="fas fa-user-circle"></i></a>
+                <a href="logout.php" class="register-link">Logout</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="page-title">My Lost Items</h1>
+            
+            <a href="report-lost.php" class="btn btn-primary">Report Lost Item</a>
+            
+            <div class="items-grid">
+                        <div class="item-card">
+                            <div class="item-image">
+                               
+                            </div>
+                            <div class="item-details">
+                                    </span>
+                                </p>
+                                <a href="item-details.php?id=<?php echo $item['id']; ?>" class="btn btn-light">View Details</a>
+                            </div>
+                        </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

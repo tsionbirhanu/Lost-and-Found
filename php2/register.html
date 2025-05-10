@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Lost and Found</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   
+    <style>
+    
+    </style>
+</head>
+<body>
+    <!-- Background circles -->
+    <div class="bg-circle top-left"></div>
+    <div class="bg-circle bottom-right"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="/assets/images/logo.png" alt="Lost and Found Logo">
+        </div>
+        <div class="nav-links">
+            <a href="index.php">Home</a>
+            <span class="separator">|</span>
+            <a href="login.php">Login</a>
+            <a href="register.php" class="active">Register</a>
+            <div class="user-icon">
+                <i class="fas fa-user-circle"></i>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Registration Form -->
+    <div class="auth-container">
+        <div class="login-icon">
+            <img src="/assets/images/pet-icon.png" alt="Pet Icon">
+        </div>
+        <h1>Create Account</h1>
+        <p>Join our community to report lost pets or help reunite found pets with their owners.</p>
+        
+        
+        <form class="auth-form" action="register.php" method="POST">
+            <div class="form-group">
+                <input type="text" name="full_name" placeholder="Full Name" value="" required>
+            </div>
+            
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Email Address" value="" required>
+            </div>
+            
+            <div class="form-group">
+                <input type="password" name="password" placeholder="Password" required>
+            </div>
+            
+            <div class="form-group">
+                <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+            </div>
+            
+            <div class="form-group">
+                <input type="tel" name="phone" placeholder="Phone Number (Optional)" value="">
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+        
+        <div class="auth-footer">
+            <p>Already have an account? <a href="login.php" class="text-link">Login here</a></p>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

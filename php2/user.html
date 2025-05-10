@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Lost and Found</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+</head>
+<body>
+    <div class="main-container">
+        <!-- Side Navigation - Desktop -->
+        <div class="side-nav">
+            <div class="nav-header">
+                <img src="images/profile.jpg" alt="<?php echo htmlspecialchars($user['full_name'] ?? 'User'); ?>">
+                <h2>
+                </h2>
+            </div>
+            <div class="side-nav-menu">
+                <a href="index.php" class="nav-link">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="search.php" class="nav-link">
+                    <i class="fas fa-search"></i>
+                    <span>Search</span>
+                </a>
+                <a href="messages.php" class="nav-link">
+                    <i class="fas fa-comment-dots"></i>
+                    <span>Messages</span>
+                </a>
+                <a href="notifications.php" class="nav-link">
+                    <i class="fas fa-bell"></i>
+                    <span>Notifications</span>
+                </a>
+                <a href="profile.php" class="nav-link active">
+                    <i class="fas fa-user"></i>
+                    <span>Profile</span>
+                </a>
+                <a href="logout.php" class="nav-link">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Mobile Status Bar -->
+            <div class="status-bar">
+                <span class="time"></span>
+                <div class="status-icons">
+                    <i class="fas fa-signal"></i>
+                    <i class="fas fa-wifi"></i>
+                    <i class="fas fa-battery-full"></i>
+                </div>
+            </div>
+
+            <div class="profile-container">
+                <div class="profile-header">
+                    <div class="profile-image">
+                        <img src="images/profile.jpg" alt="">
+                    </div>
+                    <div class="profile-info">
+                        <h1 class="profile-name">
+                        </h1>
+                        <div class="profile-actions">
+                            <a href="edit_profile.php" class="btn btn-outline">
+                                <i class="fas fa-user-edit"></i> Edit Profile
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span></span>
+                    </div>
+                                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span></span>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                </div>
+                
+                <div class="profile-actions" style="margin-top: 30px;">
+                    <a href="logout.php" class="btn btn-danger">
+                        <i class="fas fa-sign-out-alt"></i> Logout
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav">
+            <a href="index.php" class="nav-item">
+                <i class="fas fa-home"></i>
+            </a>
+            <a href="search.php" class="nav-item">
+                <i class="fas fa-search"></i>
+            </a>
+            <a href="messages.php" class="nav-item">
+                <i class="fas fa-comment-dots"></i>
+            </a>
+            <a href="notifications.php" class="nav-item">
+                <i class="fas fa-bell"></i>
+            </a>
+            <a href="profile.php" class="nav-item active">
+                <i class="fas fa-user"></i>
+            </a>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+   
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsfeed - Lost and Found</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.php"><img src="images/logo.png" alt="Lost and Found Logo"></a>
+            </div>
+            <div class="nav-links">
+                <a href="index.php">HOME</a>
+                <a href="lost.php">LOST</a>
+                <a href="found.php">FOUND</a>
+                <a href="about.php">ABOUT US</a>
+                <div class="separator">|</div>
+                <a href="profile.php" class="user-icon active"><i class="fas fa-user-circle"></i></a>
+                <a href="logout.php" class="register-link">Logout</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="newsfeed-container">
+            <h1 class="page-title">Newsfeed</h1>
+            
+            <div class="refresh-icon">
+                <i class="fas fa-sync-alt" onclick="location.reload()"></i>
+            </div>
+            
+            <div class="posts-container" id="postsContainer">
+                    <div class="post">
+                        <div class="post-header">
+                            <div class="post-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="post-info">
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <h3 class="post-title">
+                            </h3>
+                            <p>
+                            <div class="post-meta">
+                                <span><i class="fas fa-map-marker-alt"></i></span>
+                                <span><i class="far fa-calendar-alt"></i></span>
+                                <span class="status-">
+                                    <i class="fas fa-info-circle"></i> 
+                                </span>
+                            </div>
+                        </div>
+                        <div class="post-actions">
+                            <button class="action-btn contact-btn">
+                                <i class="fas fa-envelope"></i> Contact
+                            </button>
+                            
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Background Decorations -->
+    <div class="bg-circle top-left"></div>
+    <div class="bg-circle bottom-right"></div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
