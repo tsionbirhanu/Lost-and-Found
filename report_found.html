@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Found Item - Lost and Found</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="Lost and Found Logo"></a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">HOME</a>
+                <a href="lost.html">LOST</a>
+                <a href="found.html" class="active">FOUND</a>
+                <a href="about.html">ABOUT US</a>
+                <div class="separator">|</div>
+                <a href="register.html" class="register-link">Register</a>
+                <a href="profile.html" class="user-icon"><i class="fas fa-user-circle"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="report-container">
+            <h1 class="page-title">Report Found Item</h1>
+            
+            <form id="reportFoundForm" class="report-form" action="report-found-process.php" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="item_name">Item Name</label>
+                    <input type="text" id="item_name" name="item_name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="item_category">Category</label>
+                    <select id="item_category" name="item_category" required>
+                        <option value="">Select Category</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="jewelry">Jewelry</option>
+                        <option value="clothing">Clothing</option>
+                        <option value="documents">Documents</option>
+                        <option value="pets">Pets</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="found_date">Date Found</label>
+                    <input type="date" id="found_date" name="found_date" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="found_location">Location</label>
+                    <input type="text" id="found_location" name="found_location" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="item_description">Description</label>
+                    <textarea id="item_description" name="item_description" rows="4" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="item_image">Upload Image (optional)</label>
+                    <input type="file" id="item_image" name="item_image" accept="image/*">
+                </div>
+                
+                <div class="form-group">
+                    <label for="contact_info">Contact Information</label>
+                    <input type="text" id="contact_info" name="contact_info" required>
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-block">Submit Report</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Background Decorations -->
+    <div class="bg-circle top-left"></div>
+    <div class="bg-circle bottom-right"></div>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/report.js"></script>
+</body>
+</html>
