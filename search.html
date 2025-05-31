@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Search - Lost and Found</title>
+    <link href="styles.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- Side Navigation - Desktop -->
+      <div class="side-nav">
+        <div class="nav-header">
+          <img alt="" src="images/profile.jpg"/>
+          <h2><span class="admin-badge">Admin</span></h2>
+        </div>
+        <div class="side-nav-menu">
+          <a class="nav-link" href="index.php"><i class="fas fa-home"></i><span>Home</span></a>
+          <a class="nav-link active" href="search.php"><i class="fas fa-search"></i><span>Search</span></a>
+          <a class="nav-link" href="messages.php"><i class="fas fa-comment-dots"></i><span>Messages</span></a>
+          <a class="nav-link" href="notifications.php"><i class="fas fa-bell"></i><span>Notifications</span></a>
+          <a class="nav-link" href="user.php"><i class="fas fa-user"></i><span>Profile</span></a>
+          <a class="nav-link" href="logout.php"><i class="fas fa-sign-out-alt"></i><span>Logout</span></a>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <div class="status-bar">
+          <span class="time"></span>
+          <div class="status-icons">
+            <i class="fas fa-signal"></i>
+            <i class="fas fa-wifi"></i>
+            <i class="fas fa-battery-full"></i>
+          </div>
+        </div>
+
+        <div class="page-header">
+          <h1>Search</h1>
+        </div>
+
+        <div class="search-container">
+          <form method="GET" action="search.php" class="search-form">
+            <input type="text" name="query" placeholder="Search for items..." required/>
+            <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i> Search</button>
+          </form>
+
+          <div class="search-results">
+            <div class="empty-state" style="padding: 40px 0; text-align: center;">
+              <i class="fas fa-search"></i>
+              <p>Enter a search term to find items</p>
+            </div>
+
+            <!-- Example Search Result (structure only) -->
+            <div class="search-result">
+              <div class="result-image">
+                <img src="uploads/item.jpg" alt="Item Image"/>
+              </div>
+              <div class="result-details">
+                <h3 class="result-title">Item Name</h3>
+                <p class="result-description">Item description goes here.</p>
+                <p class="result-location">Location: Example Location</p>
+                <a href="item.php?id=1" class="btn btn-secondary">View</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <div class="mobile-nav">
+        <a class="nav-item" href="index.php"><i class="fas fa-home"></i></a>
+        <a class="nav-item active" href="search.php"><i class="fas fa-search"></i></a>
+        <a class="nav-item" href="messages.php"><i class="fas fa-comment-dots"></i></a>
+        <a class="nav-item" href="notifications.php"><i class="fas fa-bell"></i></a>
+        <a class="nav-item" href="profile.php"><i class="fas fa-user"></i></a>
+      </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+    <script>
+      function updateTime() {
+        const now = new Date();
+        const timeStr = now.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
+        document.querySelectorAll('.time').forEach(el => el.textContent = timeStr);
+      }
+      setInterval(updateTime, 60000);
+    </script>
+  </body>
+</html>
