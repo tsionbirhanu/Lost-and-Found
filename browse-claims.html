@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Browse Claims</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #343a40;
+            padding: 15px;
+        }
+
+        nav a {
+            color: #ffffff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table th, table td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        table th {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #343a40;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="browse-claims.html">Browse Claims</a>
+    <a href="submit-claim.html">Submit Claim</a>
+</nav>
+
+<div class="container">
+    <h2>Browse Claims</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Claim ID</th>
+                <th>Student Name</th>
+                <th>Subject</th>
+                <th>Description</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Static sample rows (replace or add more as needed) -->
+            <tr>
+                <td>CL001</td>
+                <td>John Doe</td>
+                <td>Mathematics</td>
+                <td>Requesting reevaluation of final exam.</td>
+                <td>Pending</td>
+            </tr>
+            <tr>
+                <td>CL002</td>
+                <td>Jane Smith</td>
+                <td>Physics</td>
+                <td>Incorrect grade posted for lab report.</td>
+                <td>Resolved</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="footer">
+    &copy; 2025 Student Result Management System. All rights reserved.
+</div>
+
+</body>
+</html>
