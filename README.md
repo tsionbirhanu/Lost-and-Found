@@ -1,52 +1,68 @@
-🔍 Smart Lost & Found Mobile App
-A digital solution to reunite lost items with their owners efficiently.
+# 🔍 Smart Lost & Found Mobile App
 
-📱 App Overview
-The Smart Lost & Found app bridges the gap between people who lose items and those who find them. Whether you’ve lost your keys on campus or found a wallet in a café, this app helps you report, search, and match items with ease.
+A digital solution to reunite lost items with their rightful owners efficiently and securely.
 
-Key Features:
-✅ Report Lost/Found Items – Upload details, photos, and location.
-✅ Smart Matching – AI suggests potential matches based on descriptions.
-✅ Real-Time Notifications – Get alerts when your item is found.
-✅ Admin Dashboard – Moderators verify and manage reports.
-✅ Secure & Private – Role-based access and encrypted data.
+---
 
-🛠️ Technology Stack
-Category	Technologies Used
-Frontend	HTML,CSS,JS
-Backend	  PHP
-Database	MYSQL
-📸 Screenshots
-Login Screen	Report Item	Matching Feed
-Login	Report Lost/Found	Browse Matches
+## 📱 App Overview
 
-Steps:
-Clone the repo:
+The **Smart Lost & Found** app bridges the gap between individuals who **lose** items and those who **find** them. Whether it's a misplaced student ID, lost phone, or found backpack — this app makes it easy to **report**, **search**, and **match** items with minimal friction.
 
-bash
-git clone https://github.com/your-repo/lost-and-found-app.git  
+---
 
+## 🚀 Key Features
 
-🤝 Contribute
-We welcome contributions! Here’s how:
+- ✅ **Report Lost/Found Items**  
+  Add item details, upload photos, and mark the location.
 
-Fork the repository.
+- 🤖 **Smart Matching with AI**  
+  Intelligent system suggests potential matches based on item descriptions and categories.
 
-Create a branch (git checkout -b feature/your-feature).
+- 🔔 **Real-Time Notifications**  
+  Instantly get notified when an item similar to yours is reported.
 
-Commit changes (git commit -m "Add awesome feature").
+- 🛠️ **Admin Dashboard**  
+  Moderators can verify, approve, or manage reports and users.
 
-Push to the branch (git push origin feature/your-feature).
+- 🔒 **Secure & Private**  
+  Encrypted user data with role-based access controls for admins and users.
 
-Open a Pull Request.
+---
 
+## 🛠️ Technology Stack
 
-🙏 Credits
-Developed by:
-Hara Dejene,
-Tsion Birhanu,
-Hermela Kassahun,
-Testaye Zeleke.
+| Category     | Technology       |
+|--------------|------------------|
+| Frontend     | HTML, CSS, JavaScript |
+| Backend      | PHP              |
+| Database     | MySQL            |
 
-Supervisor: Mr. Yared Tekalign
+---
 
+## 📸 App Screenshots
+
+> Here's a glimpse of what the app looks like:
+
+- 🔐 **Login Screen** – Secure access to your account.  
+- 📝 **Report Item** – Easy-to-fill form to report lost/found items.  
+- 🔍 **Matching Feed** – View potential matches suggested by the system.
+
+> *(Add image links or embed screenshots here)*
+
+---
+
+## 📂 Getting Started
+
+To get a local copy up and running, follow these simple steps:
+
+### 🔧 Prerequisites
+
+- PHP >= 7.x
+- MySQL
+- XAMPP/WAMP or any local server
+
+### 📥 Clone the Repository
+
+```bash
+git clone https://github.com/your-repo/lost-and-found-app.git
+cd lost-and-found-app
