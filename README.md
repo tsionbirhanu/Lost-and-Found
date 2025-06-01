@@ -71,3 +71,44 @@ To get a local copy up and running, follow these simple steps:
 ```bash
 git clone https://github.com/your-repo/lost-and-found-app.git
 cd lost-and-found-app
+
+🤝 Contributing
+We love collaboration! Follow these steps to contribute:
+
+Fork the repository.
+
+Create a feature branch:
+
+bash
+Copy
+Edit
+git checkout -b feature/your-feature-name
+Commit your changes:
+
+bash
+Copy
+Edit
+git commit -m "Add your awesome feature"
+Push to the branch:
+
+bash
+Copy
+Edit
+git push origin feature/your-feature-name
+Open a Pull Request.
+
+👩‍💻 Developed By
+Hara Dejene   : UGR/30631/15
+
+Tsion Birhanu : UGR /31331/15
+
+Hermela Kassahun : UGR /30673/15
+
+Testaye Zeleke : UGR/25639/14
+
+🎓 Supervisor:
+Mr. Yared Tekalign
+
+📜 License
+This project is licensed under the MIT License.
+
