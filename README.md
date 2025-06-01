@@ -97,7 +97,8 @@ Edit
 git push origin feature/your-feature-name
 Open a Pull Request.
 
-👩‍💻 Developed By
+```
+ 👩‍💻 Developed By
 Hara Dejene   : UGR/30631/15
 
 Tsion Birhanu : UGR /31331/15
