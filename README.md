@@ -47,7 +47,12 @@ The **Smart Lost & Found** app bridges the gap between individuals who **lose** 
 - 📝 **Report Item** – Easy-to-fill form to report lost/found items.  
 - 🔍 **Matching Feed** – View potential matches suggested by the system.
 
-> *(Add image links or embed screenshots here)*
+> *![image](https://github.com/user-attachments/assets/36fc1dc5-f4aa-4051-a538-d475eee43e39)
+*
+> *![image](https://github.com/user-attachments/assets/70ca14c2-0bab-4f8b-8513-2147fc2f2733)
+*
+> *![image](https://github.com/user-attachments/assets/af71868f-1a0c-4693-9323-ab58edbed83a)*
+
 
 ---
 
