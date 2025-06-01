@@ -46,8 +46,6 @@ Developed by:
 Hara Dejene,
 Tsion Birhanu,
 Hermela Kassahun,
-Tsion Birhanu,
-Hara Dejene,
 Testaye Zeleke.
 
 Supervisor: Mr. Yared Tekalign
