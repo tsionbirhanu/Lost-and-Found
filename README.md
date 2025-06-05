@@ -103,11 +103,11 @@ Open a Pull Request.
  
 Hara Dejene(https://github.com/honeydysh)   : UGR/30631/15 
 
-Tsion Birhanu : UGR /31331/15
+Tsion Birhanu(https://github.com/tsionbirhanu) : UGR /31331/15
 
-Hermela Kassahun : UGR /30673/15
+Hermela Kassahun(https://github.com/hermela1515) : UGR /30673/15
 
-Tesfaye Zeleke : UGR/25639/14
+Tesfaye Zeleke(https://github.com/abizeleke) : UGR/25639/14
 
 🎓 Supervisor:
 Mr. Yared Tekalign
